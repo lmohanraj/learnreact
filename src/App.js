@@ -1,6 +1,6 @@
 import "./App.css";
 import Content from "./Content";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -19,8 +19,12 @@ function App() {
           </ul>
         </section>
         <section className="signin">
-          <div className="sign">Sign In</div>
-          <button>GET STARTED</button>
+          <Link to="/signIn">
+            <div className="sign">Sign In</div>
+          </Link>
+          <Link to="/signUp">
+            <button>GET STARTED</button>
+          </Link>
         </section>
       </header>
       <Content />
