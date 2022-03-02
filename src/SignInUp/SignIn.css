@@ -1,0 +1,26 @@
+section {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  /* border: 1px solid red; */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 9px 6px 5px 1px rgba(191, 186, 186, 0.75);
+  -webkit-box-shadow: 9px 6px 5px 1px rgba(191, 186, 186, 0.75);
+  -moz-box-shadow: 9px 6px 5px 1px rgba(191, 186, 186, 0.75);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.submitSignIn {
+  width: 100%;
+  margin: 20px 0;
+  color: white;
+}
