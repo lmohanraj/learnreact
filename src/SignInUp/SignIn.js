@@ -1,9 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import "./SignIn.css";
 
 function SignIn() {
+  let navigate = useNavigate();
   return (
     <section>
-      <form onSubmit={(evt) => evt.preventDefault()}>
+      <form
+        onSubmit={async (event) => {
+          event.preventDefault();
+          navigate(`/home`);
+        }}
+      >
         <div className="inputs">
           <label for="name">Username</label>
           <input type="email" placeholder="Email" id="name" name="name" />

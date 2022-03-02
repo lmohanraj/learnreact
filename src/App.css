@@ -3,11 +3,16 @@
 }
 
 header {
-  color: #1a1938;
+  color: #1a1938 !important;
   /* border: 2px solid green; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  padding-bottom: 10px;
 }
 
 .signin {
@@ -52,4 +57,9 @@ li {
 
 a {
   text-decoration: none !important;
+  color: #1a1938;
+}
+
+.active {
+  color: #61dafb;
 }

@@ -1,21 +1,51 @@
 import "./App.css";
 import Content from "./Content";
-import { Link } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <header>
         <section className="logoSection">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjd4v7Hm-xkJAiDgqgftQIUj3paIn2H1rLCw&usqp=CAU"
-            alt="logo"
-          />
+          <Link to="/">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjd4v7Hm-xkJAiDgqgftQIUj3paIn2H1rLCw&usqp=CAU"
+              alt="logo"
+            />
+          </Link>
           <ul>
-            <li>Why React?</li>
-            <li>Components</li>
-            <li>DOM Tree</li>
-            <li>Hooks</li>
+            <li>
+              <NavLink
+                to="/React"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Why React?
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/Components"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Components
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/DomTree"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                DOM Tree
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/Hooks"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Hooks
+              </NavLink>
+            </li>
           </ul>
         </section>
         <section className="signin">
@@ -27,7 +57,7 @@ function App() {
           </Link>
         </section>
       </header>
-      <Content />
+      <Outlet />
     </div>
   );
 }

@@ -1,0 +1,13 @@
+.picture {
+  width: 300px;
+  height: auto;
+}
+
+h2 {
+  text-align: left;
+  padding-left: 20px;
+}
+
+code {
+  text-align: left;
+}
