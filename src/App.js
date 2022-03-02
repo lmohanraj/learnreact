@@ -1,5 +1,4 @@
 import "./App.css";
-import Content from "./Content";
 import { Link, NavLink, Outlet } from "react-router-dom";
 
 function App() {
