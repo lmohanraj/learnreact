@@ -1,8 +1,25 @@
-section {
+.section {
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoImage {
+  margin-right: 5px;
+  margin-left: 0;
+}
+
+.React {
+  margin-left: 5px;
+  padding-left: 0;
 }
 
 form {
