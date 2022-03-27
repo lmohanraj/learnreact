@@ -3,7 +3,7 @@ import "./Content.css";
 
 function Content() {
   return (
-    <section className="section">
+    <section className="mainSection">
       <div className="div1">
         <img
           className="image"
